@@ -23,6 +23,12 @@ public class ProductService {
 		return productRepository.save(product);
 	}
 	
+	public Product getProductByid (int id) {
+		// TODO Auto-generated method stub
+		Product product = productRepository.findById(id).isPresent() ? productRepository.findById(id).get() : null;
+		return product;
+	}
+	
 	public Product updateProduct(int id, Product newProduct){
 		if(productRepository.findById(id).isPresent()){
 			Product existingProductt =productRepository.findById(id).get();
