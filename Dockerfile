@@ -1,4 +1,4 @@
 FROM openjdk:8
-EXPOSE 8892
-ADD /target/ecommerce-product-0.0.1-SNAPSHOT.jar  ecommerce-product.jar
-ENTRYPOINT ["java", "-jar", "ecommerce-product.jar"]
+EXPOSE 8092
+ADD /target/produit-0.0.1-SNAPSHOT.jar  produit-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java", "-jar", "produit-0.0.1-SNAPSHOT.jar"]

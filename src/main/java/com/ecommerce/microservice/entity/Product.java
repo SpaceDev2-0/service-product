@@ -11,7 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table (name = "products")
+@Table (name = "produits")
 public class Product implements Serializable {
  
 

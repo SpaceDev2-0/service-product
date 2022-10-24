@@ -26,13 +26,13 @@ import com.ecommerce.microservice.service.ProductService;
 
 @CrossOrigin("*")
 @RestController
-@RequestMapping(value="/api/products")
+@RequestMapping("/produits")
 public class ProductRestAPI {
 	@Autowired
 	private ProductService productService;
     	//affichage 
 		//http://localhost:8090/SpringMVC/servlet/retrieveProduits
-		@GetMapping("retrieveProduits")
+		@GetMapping("/retrieveProduits")
 		public List<Product> getProduct(){
 			return productService.retrieveAllProduit();
 			
